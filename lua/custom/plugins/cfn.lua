@@ -22,6 +22,7 @@ require('lspconfig.configs').cfn_lsp = {
     },
   },
 }
+
 require('lspconfig').cfn_lsp.setup {}
 
 vim.api.nvim_create_autocmd({ 'BufWritePost' }, {
@@ -35,6 +36,7 @@ return {
   config = function(_)
     require('lint').linters_by_ft = {
       cloudformation = { 'cfn_lint', 'cfn_nag' },
+      markdown = { 'markdownlint-cli2' },
     }
   end,
 }
