@@ -12,3 +12,22 @@ to this kickstart to get neovim working as I want.
   - lua-language-server lua_ls
   - markdownlint-cli2
   - stylua
+
+## Install on Raspbery PI
+
+There is no Neovim package for the Raspberri PI - Well at least not a recent
+one.
+
+As of 12/08/2024 - the version on neovim on raspberry pi apt packages is:
+neovim/stable 0.7.2-7 arm64
+
+These are the instructions to build it from source.
+
+```shell
+sudo apt-get install git
+sudo apt-get install libtool libtool-bin autoconf automake cmake g++ pkg-config unzip
+git clone https://github.com/neovim/neovim.git
+cd neovim
+make CMAKE_BUILD_TYPE=RelWithDebInfo
+sudo make install
+```
