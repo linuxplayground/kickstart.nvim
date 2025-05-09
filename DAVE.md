@@ -31,3 +31,19 @@ cd neovim
 make CMAKE_BUILD_TYPE=RelWithDebInfo
 sudo make install
 ```
+
+## Install Deno for peek.lua
+
+```shell
+➜  ~ curl -fsSL https://deno.land/install.sh | sh
+######################################################################## 100.0%
+Archive:  /home/davelatham/.deno/bin/deno.zip
+  inflating: /home/davelatham/.deno/bin/deno
+Deno was installed successfully to /home/davelatham/.deno/bin/deno
+Manually add the directory to your $HOME/.bashrc (or similar)
+  export DENO_INSTALL="/home/davelatham/.deno"
+  export PATH="$DENO_INSTALL/bin:$PATH"
+Run '/home/davelatham/.deno/bin/deno --help' to get started
+
+Stuck? Join our Discord https://discord.gg/deno
+```
