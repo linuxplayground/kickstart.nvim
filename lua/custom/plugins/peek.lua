@@ -4,7 +4,7 @@ return {
   build = 'deno task --quiet build:fast',
   config = function()
     require('peek').setup {
-      app = 'wslview',
+      app = '/mnt/c/Program Files (x86)/Google/Chrome/Application/chrome.exe',
     }
 
     vim.api.nvim_create_user_command('PeekOpen', require('peek').open, {})
